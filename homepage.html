@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>My Personal Website</title>
+</head>
+
+<html>
+
+<body align="center" onload="startTime()">
+
+<h2></h2>
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+</html>
+ 
+
+<html>
+<head>
+<style>
+body {
+  background-image: url('about me/cappadocia.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+
+<div class="banner">
+  <div>
+    <h1><marquee>❤Welcome to My Website❤</marquee></h1>
+    <a href="about me.html"><img src="button/about me.png"></a>
+    <a href="experience.html"><img src="button/experience.png"></a>
+    <a href="education.html"><img src="button/education.png"></a>
+    <a href="family.html"><img src="button/family.png"></a>
+    <a href="gallery.html"><img src="button/gallery.png"></a>
+  </div>  
+</div>
+<br>
+<embed src="about me/5 Minute Timer  Sounds of the Beach.mp3" loop="true" autostart="true" width="144" height="60">
+ 
